@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E35D2B9-C874-44AC-87A8-B876722762F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sistema</RootNamespace>
+    <AssemblyName>Sistema</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\SmartVet\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <HockeyAppResourceId>368c512cfec742f6aa204e4bb8f3a1f8</HockeyAppResourceId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D58BDE9E0B32F0A18FF9939A67F48A245077FF60</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Sistema_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dbSistemaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbSistemaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModelo.Designer.cs">
+      <DependentUpon>FormModelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Agenda.Designer.cs">
+      <DependentUpon>form_Agenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_CadAdicional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_CadAdicional.Designer.cs">
+      <DependentUpon>form_CadAdicional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_CadAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_CadAnimal.Designer.cs">
+      <DependentUpon>form_CadAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_CadAnimal_CadBotao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_CadAnimal_CadBotao.Designer.cs">
+      <DependentUpon>form_CadAnimal_CadBotao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_CadAnimal_CadEspecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_CadAnimal_CadEspecie.Designer.cs">
+      <DependentUpon>form_CadAnimal_CadEspecie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_CadAnimal_CadRaça.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_CadAnimal_CadRaça.Designer.cs">
+      <DependentUpon>form_CadAnimal_CadRaça.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_CadAtendimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_CadAtendimento.Designer.cs">
+      <DependentUpon>form_CadAtendimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_CadCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_CadCliente.Designer.cs">
+      <DependentUpon>form_CadCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_CadLançamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_CadLançamento.Designer.cs">
+      <DependentUpon>form_CadLançamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_CadMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_CadMedico.Designer.cs">
+      <DependentUpon>form_CadMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_CadMedico_CadEspecialidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_CadMedico_CadEspecialidade.Designer.cs">
+      <DependentUpon>form_CadMedico_CadEspecialidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_CadUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_CadUsuario.Designer.cs">
+      <DependentUpon>form_CadUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_CadVacina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_CadVacina.Designer.cs">
+      <DependentUpon>form_CadVacina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ConsAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ConsAnimal.Designer.cs">
+      <DependentUpon>form_ConsAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ConsAtendimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ConsAtendimento.Designer.cs">
+      <DependentUpon>form_ConsAtendimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ConsCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ConsCliente.Designer.cs">
+      <DependentUpon>form_ConsCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ConsEspecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ConsEspecie.Designer.cs">
+      <DependentUpon>form_ConsEspecie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ConsMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ConsMedico.Designer.cs">
+      <DependentUpon>form_ConsMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ConsRaça.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ConsRaça.Designer.cs">
+      <DependentUpon>form_ConsRaça.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ConsTipoAtendimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ConsTipoAtendimento.Designer.cs">
+      <DependentUpon>form_ConsTipoAtendimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ConsTipoExame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ConsTipoExame.Designer.cs">
+      <DependentUpon>form_ConsTipoExame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ConsTipoProtocolo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ConsTipoProtocolo.Designer.cs">
+      <DependentUpon>form_ConsTipoProtocolo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Consulta.Designer.cs">
+      <DependentUpon>form_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ConsUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ConsUsuario.Designer.cs">
+      <DependentUpon>form_ConsUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ConsVacina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ConsVacina.Designer.cs">
+      <DependentUpon>form_ConsVacina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Dashboards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Dashboards.Designer.cs">
+      <DependentUpon>form_Dashboards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Menu.Designer.cs">
+      <DependentUpon>form_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Relatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Relatorios.Designer.cs">
+      <DependentUpon>form_Relatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_RelCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_RelCliente.Designer.cs">
+      <DependentUpon>form_RelCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="FormModelo.resx">
+      <DependentUpon>FormModelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Agenda.resx">
+      <DependentUpon>form_Agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_CadAdicional.resx">
+      <DependentUpon>form_CadAdicional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_CadAnimal.resx">
+      <DependentUpon>form_CadAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_CadAnimal_CadBotao.resx">
+      <DependentUpon>form_CadAnimal_CadBotao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_CadAnimal_CadEspecie.resx">
+      <DependentUpon>form_CadAnimal_CadEspecie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_CadAnimal_CadRaça.resx">
+      <DependentUpon>form_CadAnimal_CadRaça.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_CadAtendimento.resx">
+      <DependentUpon>form_CadAtendimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_CadCliente.resx">
+      <DependentUpon>form_CadCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_CadLançamento.resx">
+      <DependentUpon>form_CadLançamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_CadMedico.resx">
+      <DependentUpon>form_CadMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_CadMedico_CadEspecialidade.resx">
+      <DependentUpon>form_CadMedico_CadEspecialidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_CadUsuario.resx">
+      <DependentUpon>form_CadUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_CadVacina.resx">
+      <DependentUpon>form_CadVacina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ConsAnimal.resx">
+      <DependentUpon>form_ConsAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ConsAtendimento.resx">
+      <DependentUpon>form_ConsAtendimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ConsCliente.resx">
+      <DependentUpon>form_ConsCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ConsEspecie.resx">
+      <DependentUpon>form_ConsEspecie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ConsMedico.resx">
+      <DependentUpon>form_ConsMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ConsRaça.resx">
+      <DependentUpon>form_ConsRaça.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ConsTipoAtendimento.resx">
+      <DependentUpon>form_ConsTipoAtendimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ConsTipoExame.resx">
+      <DependentUpon>form_ConsTipoExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ConsTipoProtocolo.resx">
+      <DependentUpon>form_ConsTipoProtocolo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Consulta.resx">
+      <DependentUpon>form_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ConsUsuario.resx">
+      <DependentUpon>form_ConsUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ConsVacina.resx">
+      <DependentUpon>form_ConsVacina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Dashboards.resx">
+      <DependentUpon>form_Dashboards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Menu.resx">
+      <DependentUpon>form_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Relatorios.resx">
+      <DependentUpon>form_Relatorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_RelCliente.resx">
+      <DependentUpon>form_RelCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="relCliente.rdlc" />
+    <None Include="dbSistemaDataSet.xsc">
+      <DependentUpon>dbSistemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbSistemaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbSistemaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbSistemaDataSet.xss">
+      <DependentUpon>dbSistemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Sistema_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginVet7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{54370f77-1cb7-4f4e-8ba1-4efa3c76393a}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{eec2a0be-bd51-4583-916f-2cc2c7aaba6b}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{3676171f-64b8-4775-ab60-6821ac4c0ea0}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-client.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-proprietario.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-funcionario2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-consultas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-exames.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-vacinas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastros.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastros1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consultas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atendimento.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consultas1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consultas11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastros11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastros1mini.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atendimento1mini.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consultas1mini.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vet7_200x200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vet7_tex_200x200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vet7_tex_200x2001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vet7_tex2_200x200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliente_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pata_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog-House_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog House_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog House_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog House_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog House_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog House_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat Footprint_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add User Male_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat Footprint_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Roofing_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add User Male_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Roofing_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Roofing_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat Footprint_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog House_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Businessman_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Businessman_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Male_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat Footprint_30px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Under Computer_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Today_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NFC Logo_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NFC Logo_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play_40px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Horizontal Line_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizar_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Horizontal Line_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newDocument_button30px.png" />
+    <None Include="Resources\Save as_button30px.png" />
+    <None Include="Resources\Save as_button30px1.png" />
+    <None Include="Resources\Save as_button26px.png" />
+    <None Include="Resources\Search_button30px.png" />
+    <None Include="Resources\View File_20px.png" />
+    <None Include="Resources\novo_20px.png" />
+    <None Include="Resources\novo_20px1.png" />
+    <None Include="Resources\Savar_20px.png" />
+    <None Include="Resources\Editar_20px.png" />
+    <None Include="Resources\excluir_20px.png" />
+    <None Include="Resources\Search_20px.png" />
+    <None Include="Resources\iconeVet.jpg" />
+    <None Include="Resources\iconeVet7.jpg" />
+    <None Include="Resources\iconeVet1.jpg" />
+    <None Include="Resources\pet-cat-dog.png" />
+    <None Include="Resources\cancelar_20px.png" />
+    <None Include="Resources\Menu_20px.png" />
+    <None Include="Resources\Cat Footprint_30px2.png" />
+    <None Include="Resources\Test Partial Passed_30px.png" />
+    <None Include="Resources\patologia_30px.png" />
+    <None Include="Resources\patologia_30px1.png" />
+    <None Include="Resources\Syringe_30px.png" />
+    <None Include="Resources\peso_30px.png" />
+    <None Include="Resources\Birthday_30px.png" />
+    <None Include="Resources\Gender_30px.png" />
+    <None Include="Resources\Planner_30px.png" />
+    <None Include="Resources\dash_30px.png" />
+    <None Include="Resources\Microsoft Excel_30px.png" />
+    <None Include="Resources\dash-test.png" />
+    <None Include="Resources\dash-test2.PNG" />
+    <None Include="Resources\Dog House_25px.png" />
+    <None Include="Resources\Guest Male_25px.png" />
+    <None Include="Resources\Medical Doctor_25px.png" />
+    <None Include="Resources\Cat Footprint_25px.png" />
+    <None Include="Resources\Dog_25px.png" />
+    <None Include="Resources\Cat Profile_25px.png" />
+    <None Include="Resources\Syringe_25px.png" />
+    <None Include="Resources\Test Tube_25px.png" />
+    <None Include="Resources\teste.png" />
+    <None Include="Resources\Calendar 7_25px.png" />
+    <None Include="Resources\Briefcase_25px.png" />
+    <None Include="Resources\Dog House_25px1.png" />
+    <None Include="Resources\Combo Chart_25px.png" />
+    <None Include="Resources\Line Chart_25px.png" />
+    <None Include="Resources\Document_25px.png" />
+    <None Include="Resources\Statistics_25px.png" />
+    <None Include="Resources\Star_25px.png" />
+    <None Include="Resources\Search_25px.png" />
+    <None Include="Resources\Close Window_25px.png" />
+    <None Include="Resources\Close Window_40px.png" />
+    <None Include="Resources\Close Window_35px.png" />
+    <None Include="Resources\Minimize Window_35px.png" />
+    <None Include="Resources\Test Tube_25px1.png" />
+    <None Include="Resources\Print_25px.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Z-Dicas-Importantes.txt" />
+    <Content Include="Z -Sistema-ToDo.txt" />
+    <Content Include="Z -Sistema-Historico.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

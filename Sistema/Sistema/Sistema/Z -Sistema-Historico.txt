@@ -1,0 +1,97 @@
+﻿
+//--------------HISTORICO----------------------------------//
+
+10-02
+cadastro animal - ok
+
+11-02 
+arrumei coloquei o menu dinamico - ok
+
+12-02 
+consegui ajustar o select para aparecer a tabela raça x especie , dgv  - ok
+
+13-02 
+recriei o bd, conforme aulas do neri, parece que deu certo
+criei o consmedico com os inner joins - ok
+criei o bll, dto e dal do medico - mas n ta ok ainda precisa validar
+criei o consulta exame e vacina
+
+14-02 
+enrosquei no cad do medico - OK
+
+15-02 
+resolvi cad medico, era erro estrutural, finalizado - OK
+
+16-02
+consegui configurar o pesquisar por... no cliente e animal, criei atendimento no bd - OK
+
+17-02
+criei as bll, dto e dal do usuario - OK
+
+18-02
+criei as bll, dto e dal do atendimento  - OK
+
+19-02
+criei o usuario, falta a consulta - OK
+
+20-02
+criei dto, dat, bll tipoatendimento, remodelei o atendimento - OK
+
+21-02 
+criei dto, dal, bll vacina e exame e o cadastro da vacina 
+criei o cadastro do tipoatendimento , remodelei o atendimento - 
+consegui gravar o atendimento, falta resolver o q fazer com as vacinas, exames e horas, dt retorno
+
+01-02
+alteração de layout
+
+02-02
+alteração de layout
+
+03-02
+alteração de layout
+criei no bd a patologia e amarrei ao atendimento
+criei a amaração no bd do animal com o cliente, criei o layout cliente x animal , falta implementar aqui
+
+05-02
+implementei o cliente x animal dto, dal e form
+
+13-03 
+alterei a estrutura do sistema, adicionei os panels
+
+14-03
+criei a tabela  do exame, tipoexame, protocolo, tpprotocolo
+
+15-03
+criei o dto , dal e bll do exame e tipoexame - OK
+
+17-03 
+criei o dto, dal e bll do aplicação, tipoprototocolo, protocolo, prescriçao, suspeita - OK
+parei na criação da vacina, falta tambem o documento ( ver como importa modelo de doc)
+
+18-03
+criei a tabela da vacina, tp vacina
+
+19-03 
+criei o form tipoexame e consulta tipoexame, tipoprotocolo e consulta tipoprotocolo
+
+20-03
+alterei todo o banco para o padrao novo
+
+21-03
+alterei no vs todos os campos novos do banco
+Alterei de combobox para textbox -> idade, peso
+Tive que refazer os botões do atendimento, perdeu referencia
+criei o tipovacina dto, dal e bll e alterei o vacina conforme o banco
+
+23-03 
+terminei o panel da vacina, falta o panel do documento
+
+24-03
+instalei o report viewer no 2017 (extensao e nuget)
+criei o report do cliente
+
+25-03
+add o campo de data de cadastro do cliente, add no banco como date, editei o dto, dal e o form
+add o campo de data de cadastro do animal e o status (se vivo ou morto) e criei uma tabela de status, 
+precisa criar o dto, dal e bll para tbSTAnimal, para entao criar no no dto, dal e bll do animal e no form

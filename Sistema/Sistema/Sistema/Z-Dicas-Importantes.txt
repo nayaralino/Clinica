@@ -1,0 +1,15 @@
+﻿
+//-------------- Dicas do Sistema e para evitar erros futuros ----------------------------------//
+
+CRIAR O DTO -> ctrl e + r cria get e set
+
+
+FORMS DE CONSULTA -> no dgv em prop vai em select mode e altera para full row select
+
+
+COMBOBOX -> para guardar fk com cbox -> associar no bd , incluir fk no dto e dal , fazer a leitura dos campos no salvar do form
+
+
+ERROS QUE JÁ RESOLVI -> se der erro na hora de cadastrar, olhar se os campos de leitura estao la no salvar(form) e no incluir(dal)
+
+

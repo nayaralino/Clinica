@@ -1,0 +1,34 @@
+﻿
+// ------------- TO DO ----------------------//
+
+PRIORITÁRIO
+- Cadastros ->   TipodeAtendimento, StatusAgenda, Agenda, Carteira de Vacinação, Lançamento
+
+- Consulta ->   TipodeAtendimento,  StatusAgenda, Agenda, Carteira de Vacinação, Lançamento
+
+
+
+IMPORTANTE 
+
+
+
+
+		
+//------------- DONE ----------------------------------//
+
+login - ok
+
+consultas ok
+raça, especie , animal, medico, usuario, exame, vacina,
+
+cadastros ok
+especie, raça, animal, medico, usuario, vacina, exame, tipoAtendimento, 
+
+bll ok
+especie, raça, idade, peso, sexo , medico, especialidade, cidade, estado, usuario, vacina, exame, tipoAtendimento, 
+
+dto ok
+especie, raça, idade, peso, sexo ,  medico, especialidade, cidade, estado, usuario, vacina, exame, tipoAtendimento, 
+
+dal ok
+especie, raça, idade, peso, sexo , medico, especialidade, cidade, estado, usuario, vacina, exame, tipoAtendimento, 
